@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PlantSP</title>
+
+    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/Style.css"/>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PlantSP.styles.css" asp-append-version="true" />
+
+    <link rel="shortcut icon" type="imagex/png" href="~/IMG/logo_site.png">
+</head>
+
+<body>
+
+    <header id="separacao_nav">
+        <nav >
+            <div id="navbar">
+                <a><img id="img_logo" src="~/IMG/logo.png"/></a>
+
+                <input id="pesquisa" placeholder="Procure por produto, nome, marca..." type="text" />
+
+                <div id="box_icons">
+                    <a><img class="icons_navbar" src="~/IMG/1.png"/></a>
+                    <a><img class="icons_navbar" src="~/IMG/2.png"/></a>
+                    <a><img class="icons_navbar" src="~/IMG/3.png"/></a>
+                </div>
+            </div>
+
+            <div id="navbar_btns">
+                <a class="btn_nav" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                <a class="btn_nav" asp-area="" asp-controller="Home" asp-action="Privacy">Meus Pedidos</a>
+
+                <a class="btn_nav" asp-area="" asp-controller="Home" asp-action="Privacy">Atendimento</a>
+
+                <a class="btn_nav" asp-area="" asp-controller="Home" asp-action="Privacy">Sobre nós</a>
+
+                <a class="btn_nav" asp-area="" asp-controller="Home" asp-action="Privacy">Plantas Nativas</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <section id="carrocel">
+
+        <div id="radius_carrocel">
+            <input class="radius_btn" type="radio" name="img"/>
+            <input class="radius_btn" type="radio" name="img" />
+            <input class="radius_btn" type="radio" name="img" />
+        </div>
+
+        <img id="plantas" src="~/IMG/Plantas.jpg" />
+
+    </section>
+
+    <section class="itens">
+        <h1 class="titulo">MAIS VENDIDOS</h1>
+
+        <div class="ofertas">
+
+            <button id="voltar"><img src="~/IMG/angulo-esquerdo.png"/></button>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+
+            <button id="ir"><img src="~/IMG/angulo-direito.png" /></button>
+
+        </div>
+
+    </section>
+
+    <section class="itens">
+        <h1 class="titulo">PARA PEQUENOS ESPAÇOS</h1>
+
+        <div class="ofertas">
+
+            <button id="voltar"><img src="~/IMG/angulo-esquerdo.png" /></button>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+            <container class="itens_cont">
+                <div class="prod">
+                    <div><img class="img_iten" src="~/IMG/produto.jpg" /></div>
+
+                    <div class="descri_iten">
+                        <p class="nome_item">Ficus Elástica Chloe | Pote Grande</p>
+                        <h4 class="preco_inicial">R$119,90</h4>
+                        <h3 class="preco_atual">R$79,90</h3>
+                    </div>
+
+                </div>
+            </container>
+
+
+            <button id="ir"><img src="~/IMG/angulo-direito.png" /></button>
+
+        </div>
+
+    </section>
+
+    <section id="localizacao">
+
+        <h1 class="titulo">Nossa Localização</h1>
+
+        <div id="area_mapa">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3247724394105!2d-46.72778649999999!3d-23.5208186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1708795370014!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer_info">
+        <div class="container_info">
+            &copy; 2024 Company, Inc
+        </div>
+
+        <div class="redes">
+            <a><img class="icons_redes" src="~/IMG/facebook.png"/></a>
+            <a><img class="icons_redes" src="~/IMG/linkedin.png" /></a>
+            <a><img class="icons_redes" src="~/IMG/instagram.png" /></a>
+
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
