@@ -1,0 +1,32 @@
+﻿@page
+@model PlantSP.Views.Shared.Login.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>SEJA BEM VINDO</h2>
+            <form method="post" action="/Account/Login">
+                <div class="textbox">
+                    <input type="text" placeholder="nome@exemplo.com" name="Useremail" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
